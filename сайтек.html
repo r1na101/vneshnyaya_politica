@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ВнешПолитика</title>
+<meta name="description" content=">>> Все самое интересное о внешней политике">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--card:#161616;--line:#2c2c2c;--text:#f2f2f2;--mute:#8d8d8d;--or:#ff9000;--mono:'JetBrains Mono','Fira Code',ui-monospace,'Courier New',monospace}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font:15px/1.6 var(--mono);min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px;width:100%}
+main{flex:1;padding:32px 0 60px}
+h1,h2,h3{font-weight:800;line-height:1.15;letter-spacing:-.02em}
+h1{font-size:clamp(28px,5vw,48px)}h2{font-size:24px;margin-bottom:16px}h3{font-size:16px}
+em{color:var(--or);font-style:normal}
+.eyebrow{color:var(--or);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+header{position:sticky;top:0;z-index:5;background:#0a0a0aee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;min-height:64px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:18px}.logo b{background:var(--or);color:#000;padding:0 6px;margin-left:2px;border-radius:3px}
+nav{display:flex;gap:4px;flex:1}
+nav a{padding:6px 10px;border-radius:4px;color:var(--mute);font-size:13px}
+nav a:hover,nav a.on{color:#fff;background:#222}nav a.on{color:var(--or)}
+.search{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.search input{background:#0f0f0f;border:0;padding:7px 10px;width:150px;outline:0}
+.search button{background:var(--or);color:#000;padding:0 10px}
+.tools{display:flex;gap:8px;align-items:center;font-size:13px}
+.burger{display:none;font-size:22px}
+.btn{display:inline-flex;gap:8px;align-items:center;padding:10px 18px;border-radius:6px;font-weight:700;background:var(--or);color:#000;border:1px solid var(--or)}
+.btn:hover{filter:brightness(1.1)}.btn.out{background:none;color:#fff;border-color:#444}.btn.out:hover{border-color:var(--or)}
+.btn:disabled{opacity:.35;cursor:not-allowed}.btn.sm{padding:6px 12px;font-size:13px}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;padding:20px 0 40px}
+.hero p{color:var(--mute);margin:16px 0 24px;max-width:540px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.fire-plate{border:1px solid var(--or);border-radius:10px;padding:24px;text-align:center;background:linear-gradient(160deg,#241400,#0e0e0e)}
+.fire-plate img{height:120px;margin:0 auto}.fire-plate .em{font-size:80px;line-height:1.2}
+.fire-plate b{display:block;margin-top:8px;color:var(--or)}.fire-plate small{color:var(--mute)}
+.stats{display:flex;gap:28px;margin-top:28px}.stats b{display:block;font-size:26px;color:var(--or)}.stats span{color:var(--mute);font-size:12px}
+section.s{margin-top:44px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.card:hover{border-color:#4a3414}.card .b{padding:16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3 a:hover{color:var(--or)}.meta{color:var(--mute);font-size:12px}
+.tag{color:var(--or);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+.ph{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;background:repeating-linear-gradient(45deg,#1b1b1b 0 14px,#251a0a 14px 28px);color:#fff;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.acts{display:flex;gap:6px;margin-top:auto;padding-top:10px;border-top:1px solid var(--line)}
+.acts button{display:flex;gap:6px;align-items:center;padding:5px 9px;border-radius:5px;color:var(--mute);font-size:13px}
+.acts button:hover{background:#222;color:#fff}.acts .on{color:var(--or)}.acts svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.acts .on svg{fill:currentColor}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+.chips button{border:1px solid var(--line);padding:5px 12px;border-radius:20px;font-size:13px;color:var(--mute)}
+.chips button.on{background:var(--or);border-color:var(--or);color:#000;font-weight:700}
+.lead{color:var(--mute);max-width:640px;margin-top:10px}
+.feed{display:grid;grid-template-columns:1fr 300px;gap:28px;margin-top:8px}
+.item{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.item time{color:var(--or);font-size:12px;font-weight:700}.item h3{font-size:17px;margin:4px 0 8px}.item h3 a:hover{color:var(--or)}
+.item p{color:var(--mute);font-size:13px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px;margin-bottom:18px}
+form label{display:block;font-size:12px;color:var(--mute);margin-bottom:12px}
+form input,form textarea,form select{width:100%;background:#0f0f0f;border:1px solid var(--line);border-radius:6px;padding:9px 11px;margin-top:4px;outline:0}
+form input:focus,form textarea:focus,form select:focus{border-color:var(--or)}
+select option{background:#111}
+.quiz{max-width:680px;margin:0 auto}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:32px}
+.bar2{height:6px;background:#222;border-radius:3px;margin:10px 0 24px}.bar2 i{display:block;height:100%;background:var(--or);border-radius:3px}
+.ans{display:block;width:100%;text-align:left;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin-bottom:10px;background:#0f0f0f}
+.ans:hover:not(:disabled){border-color:var(--or)}.ans.sel{border-color:var(--or);background:#241400}
+.ans.ok{border-color:#3fb950;background:#0d2214}.ans.bad{border-color:#f85149;background:#2a1010}
+.why{color:var(--mute);font-size:13px;margin:12px 0}
+.score{font-size:64px;font-weight:800;color:var(--or);line-height:1}
+.rev div{padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}.rev small{display:block;color:var(--mute)}
+.banner{border:1px dashed var(--or);padding:12px 16px;border-radius:8px;margin-bottom:20px;color:var(--or)}
+.art{max-width:720px;margin:0 auto}.art p{margin:16px 0}
+.team{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px}
+.team .card{padding:16px;text-align:center;align-items:center}.av{width:72px;height:72px;border-radius:50%;background:repeating-linear-gradient(45deg,#1b1b1b 0 8px,#251a0a 8px 16px);border:1px solid var(--or);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--or);font-size:24px;margin-bottom:8px;overflow:hidden}
+.av img{width:100%;height:100%;object-fit:cover}
+.empty{color:var(--mute);padding:30px 0}
+.cta{border:1px solid var(--or);border-radius:10px;padding:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:44px}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mute);font-size:12px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+#toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,80px);background:var(--or);color:#000;font-weight:700;padding:10px 18px;border-radius:6px;transition:.25s;z-index:9;opacity:0}
+#toast.show{transform:translate(-50%,0);opacity:1}
+@media(max-width:820px){.hero,.feed{grid-template-columns:1fr}.burger{display:block}nav{display:none;order:5;width:100%;flex-direction:column}nav.open{display:flex}.search input{width:110px}.item{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="logo" href="#/home">Внеш<b>Политика</b></a>
+  <button class="burger" data-act="burger" aria-label="Меню">☰</button>
+  <nav id="nav"></nav>
+  <form class="search" id="sf"><input id="q" placeholder="Найти тему..." aria-label="Поиск"><button aria-label="Искать">⌕</button></form>
+  <div class="tools" id="tools"></div>
+</div></header>
+<div class="wrap" style="flex:1;display:flex;flex-direction:column"><main id="app"></main></div>
+<footer><div class="wrap"><span>© 2026 ВнешПолитика</span></footer>
+<div id="toast"></div>
+
+<script>
+/* ============ НАСТРОЙКИ ============ */
+// участники группы & тестовые логины и пароли:
+const USERS=[
+ {n:'Казанцев Артем',  e:'artem@vp.ru',  p:'artem2026'},
+ {n:'Смурова Ульяна', e:'ulyana@vp.ru', p:'ulyana2026'},
+ {n:'Андреева Елизавета',   e:'liza@vp.ru',   p:'liza2026'},
+ {n:'Пантелеева Виктория',   e:'vika@vp.ru',   p:'vika2026'},
+ {n:'Маринина Полина', e:'polina@vp.ru', p:'polina2026'}];
+// Гифка огня (если ссылка не откроется — покажется эмодзи 🔥)
+const FIRE_GIF='https://lh7-us.googleusercontent.com/Ba75r7V9quhkPcCsAWZXijfCKTPYNuoujXPdXq5hDpmrchuDW17HGK5SAK8XxnruFtEsFBbR9SkY6RPdJOnuO94YHtz22MDJElfmTTiKTRAxqaVzCnZBE_4UketngAbNWqiilYmFGJVtkczR';
+// Фото команды: вставьте ссылку вместо '' (напр. 'img/artem.jpg')
+const PHOTOS={'Артем':'','Ульяна':'','Лиза':'','Вика':'','Полина':''};
+
+/* ============ ДАННЫЕ ============ */
+// img:'' — показывается заглушка. Чтобы поставить картинку, впишите ссылку в img.
+const SEED=[
+ {id:'n1',type:'news',tag:'Экономика',date:'2026-10-17',base:85,img:'https://opis-cdn.tinkoffjournal.ru/mercury/benzin-crisis-2026-in-out-TASS_84344303.jpg?preset=image_760w_2x',title:'Дизельная сделка России и США',
+  text:'9 октября Путин и Трамп по телефону договорились о поставках российского дизельного топлива: 300 тыс. тонн сразу, 500 тыс. в ноябре и 1 млн дальше, с потенциалом роста до 3 млн тонн.\nМинфин США выдал лицензию, которая временно снимает санкционные ограничения до 7 апреля 2027 года. Первые поставки в США намечены на конец октября.\nЕвропа сделку раскритиковала, а в Конгрессе США демократы внесли законопроект о её срыве.',
+  src:[['Т—Ж','https://t-j.ru/news/rf-usa-diesel-deal/?ysclid=mvdn26s258166387662'],['Lenta.ru','https://lenta.ru/news/2026/10/17/long-v-kongress-ssha-vnesli-zakonoproekt-o-sryve-dizelnoy-sdelki-chast-ego-sostaviteley-sostoit-v-gruppe-pomoschi-ukraine/']]},
+
+ {id:'n2',type:'news',tag:'БРИКС',date:'2026-09-13',base:67,img:'https://cdn5.vedomosti.ru/image/2026/74/19lr51/mobile_low-1n3q.webp',title:'Саммит БРИКС в Нью-Дели',
+  text:'12–13 сентября 2026 года прошёл XVIII саммит БРИКС. Приняли Нью-Делийскую декларацию «Укрепление устойчивости, инновации, сотрудничество и стабильность» с призывом отменить «незаконные санкции».\nСи Цзиньпин приехал впервые с 2019 года. Путин и Моди обсудили расчёты в национальных валютах, а Путин продвигал идеи платёжной инфраструктуры и зерновой биржи БРИКС.\nВ 2027 году председательство переходит к Китаю.',
+  src:[['Российская газета','https://rg.ru/2026/09/13/briks-budet-rasti.html'],['Ведомости','https://www.vedomosti.ru/politics/articles/2026/09/14/1228491-sammit-briks-vipolnil-programmu-minimum']]},
+
+ {id:'n3',type:'news',tag:'Мнения',date:'2026-10-01',base:101,img:'https://i.postimg.cc/0yNxZMJz/2026-10-18-18-58-44.png',title:'Речь Путина на «Валдае»: что в ней услышали аналитики',
+  text:'Аналитики читают выступление 1 октября как переход к переговорной логике. Путин заявил о готовности к диалогу по Украине и о том, что готов возобновить диалог по СНВ-3 «хоть завтра».\nОбраз Запада в речи расщепился: США теперь «партнёр», а Европа — главный антагонист. Впервые публично признали перегрев экономики и потери от ударов по НПЗ.\nСНВ-3 — договор о сокращении стратегических наступательных вооружений. Это двустороннее соглашение России и США, которое регулировало размеры их ядерных арсеналов.',
+  src:[['Первый канал','https://www.1tv.ru/sobytiya/vystupleniya-prezidenta-rossii/vystuplenie-vladimira-putina-na-forume-valday-01-10-2026?ysclid=mvdp67b9n6153992759']]},
+
+ {id:'n4',type:'news',tag:'Безопасность',date:'2026-10-16',base:73,img:'https://www.mid.ru/upload/resize_cache/medialibrary/9ff/ddmb2og54wsecryqx9ltr97vu34th38w/726_480_1/Выступление%20СВЛ.JPG',title:'Конференция ОДКБ, СНГ и ШОС по безопасности в Центральной Азии',
+  text:'16 октября в Москве прошла конференция ОДКБ, СНГ и ШОС по безопасности в Центральной Азии и Афганистане. Участвовали Лавров, главы международных структур и дипломаты.\nОбсуждали «афганский фактор», водно-энергетическую и информационную безопасность региона.\nОДКБ — Организация Договора о коллективной безопасности, ШОС — Шанхайская организация сотрудничества.',
+  src:[['МИД России','https://www.mid.ru/ru/foreign_policy/news/2152977/']]},
+
+ {id:'n5',type:'news',tag:'Санкции',date:'2026-10-14',base:23,img:'https://cdn.ren.tv/cache/960x540/media/img/a0/18/a0181a2a351fe7000ef2af4051481e9123efc5b0e6c552aef607f78a490a79a41f22df.jpg',title:'Визовый вопрос с ЕС',
+  text:'ЕС достиг политического соглашения о запрете на въезд для ветеранов СВО и готовит ужесточение шенгенских виз для россиян. Предложения Еврокомиссии ждут в январе 2027 года.\nМИД РФ называет эти меры дискриминационными.',
+  src:[['РЕН ТВ','https://ren.tv/longread/1466727-evropa-zakryvaetsia-rossiianam-khotiat-zapretit-puteshestvovat-po-shengenskoi-zone']]},
+
+ {id:'n6',type:'news',tag:'История',date:'2026-10-09',base:77,img:'https://historyrussia.org/images/18062026_1.jpg',title:'80 лет Нюрнбергскому трибуналу',
+  text:'В 2026 году исполняется 80 лет приговору Нюрнбергского трибунала, и вокруг даты идёт кампания памяти: форум в Ростове-на-Дону (2 октября) и международная конференция в Ставрополе (9 октября).\nРоссия впервые опубликовала подлинный текст приговора и отправила 10 тыс. экземпляров книги о Нюрнберге за рубеж. В московском «Манеже» воссоздали зал №600 Дворца правосудия, где шёл процесс.',
+  src:[['Российское историческое общество','https://historyrussia.org/sobytiya/v-sovete-federatsii-obsudili-borbu-s-iskazheniem-istorii-vtoroj-mirovoj-vojny.html'],['СКФУ','https://ncfu.ru/gi/news/24783/']]},
+
+ {id:'n7',type:'news',tag:'Обсуждают',date:'2026-10-17',base:99,img:'http://cdn.iz.ru/sites/default/files/styles/900x506/public/news-2026-05/2026-05-08T080423Z_723174553_RC2U4LARC8KD_RTRMADP_3_MOLDOVA-EU_2.JPG.jpg?itok=1t0AnFgL',title:'Дизельная сделка: как отреагировал мир',
+  text:'Последствия сделки обсуждают в США и Европе. Кая Каллас требует новых санкций от США, министр финансов США Бессент обвиняет европейцев в лицемерии, а Конгресс пытается сделку заблокировать.'},
+
+ {id:'n8',type:'news',tag:'Обсуждают',date:'2026-10-18',base:52,img:'https://cdn.ren.tv/cache/960x540/media/img/17/53/17536d5ec30241367ee347924dd6571992c33045e5a7746f45d6452acaabc5e3489de5.jpg',title:'Санкции против санкций',
+  text:'Обсуждают ответные меры Москвы: передачу активов Tarkett, Ontex, «Ашана» и Metro во временное управление. В Кремле это называют защитой интересов.',
+  src:[['РЕН ТВ','https://ren.tv/news/politika/1467574-v-kremle-obiasnili-peredachu-aktivov-tarkett-i-ontex-vo-vremennoe-upravlenie']]},
+
+ {id:'n9',type:'news',tag:'Обсуждают',date:'2026-10-18',base:53,img:'https://cdn.vesti.ru/photobank/prod/medium/155/657/51.jpg',title:'Кибератаки: в ЕС обсуждают «парализовать» города России',
+  text:'Европейские аналитики обсуждают кибератаки на городскую инфраструктуру России, вплоть до московского метро, как «предупредительный сигнал».\nЗахарова (представитель МИД России) назвала обвинения в «гибридных атаках» бездоказательными, а Путин — «страшилками».',
+  src:[['Вести','https://www.vesti.ru/ns/nyt-v-es-predlagayut-kiberatakami-paralizovat-goroda-rossii-ili-metro-moskvy']]},
+
+ {id:'f1',type:'fact',tag:'Факт',year:'911',date:'2026-10-09',base:11,img:'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Переговоры_об_условиях_мирного_договора_между_князем_Олегом_и_византийскими_императорами.jpg/960px-thumbnail.jpg',title:'Договор Руси с Византией',
+  text:'В 911 году князь Олег заключил договор с Византийской империей, одним из самых могущественных государств того времени. Договор регулировал торговлю, защищал права купцов и устанавливал правила разрешения конфликтов между жителями двух государств.\nИнтересный факт: в договоре упоминаются русские послы, многие из которых носили скандинавские имена. Это говорит о многонациональном составе окружения первых русских князей.\nЗначение: договор укрепил международное положение Руси, помог развитию торговли и показал, что она выступала самостоятельным участником международных отношений.'},
+
+ {id:'f2',type:'fact',tag:'Факт',year:'1721',date:'2026-10-09',base:24,img:'https://cdn.monetnik.ru/storage/blog/6q1u0smx5u/2025-10-1103.800.jpg',title:'Ништадтский мир',
+  text:'В 1721 году Россия и Швеция подписали Ништадтский мир, завершивший Северную войну, которая длилась 21 год. Россия получила территории в Прибалтике, Ингрию и часть Карелии, закрепив выход к Балтийскому морю.\nИнтересный факт: Санкт-Петербург был основан в 1703 году, за 18 лет до договора, который окончательно закрепил эту территорию за Россией.\nЗначение: победа укрепила международное влияние России. В 1721 году Пётр I принял титул императора, а Россия стала Российской империей и одной из ведущих европейских держав.'},
+
+ {id:'f3',type:'fact',tag:'История',year:'1480',date:'2026-10-08',base:15,img:'https://biographe.ru/wp-content/uploads/2025/10/1212-1.webp',title:'Стояние на реке Угре',
+  text:'В 1480 году войска Ивана III и хана Ахмата встретились на реке Угре. Противостояние закончилось отступлением Орды без крупного сражения.\nИнтересный факт: это событие традиционно считается окончанием зависимости Руси от Золотой Орды.\nЗначение: Московское государство укрепило независимость и получило больше возможностей самостоятельно проводить внешнюю политику.'},
+
+ {id:'f4',type:'fact',tag:'История',year:'1689',date:'2026-10-08',base:33,img:'https://i.ytimg.com/vi/lvRkIO2vZL8/hqdefault.jpg',title:'Нерчинский договор с Китаем',
+  text:'В 1689 году Россия и Китай заключили первый официальный договор, урегулировавший территориальные споры между государствами.\nИнтересный факт: переговоры велись на латинском языке при участии переводчиков-иезуитов.\nЗначение: договор помог установить границы, снизить напряжённость и развить дипломатические отношения с Китаем.'},
+
+ {id:'f5',type:'fact',tag:'Дипломатия',year:'1549',date:'2026-10-08',base:9,img:'https://runivers.ru/upload/gallery/602354/original.jpg',title:'Создание Посольского приказа',
+  text:'В 1549 году при Иване Грозном началось формирование Посольского приказа, первого специализированного государственного учреждения России, отвечавшего за внешнюю политику и дипломатические отношения.\nИнтересный факт: русские дипломаты уже в XVI веке использовали специальные шифры для секретной переписки с иностранными государствами.\nЗначение: создание приказа способствовало развитию профессиональной дипломатии, укреплению центральной власти и повышению международного авторитета Российского государства.'},
+
+ {id:'m1',type:'meme',tag:'Мем',date:'2026-10-07',base:36,img:'https://i.pinimg.com/736x/72/d7/75/72d77515599c78f4415ea23b218b2df8.jpg',title:'Когда сказал «выражаем озабоченность», но озабоченность очень серьёзная',text:'Дипломатический язык: чем спокойнее фраза, тем серьёзнее ситуация.'},
+ {id:'m2',type:'meme',tag:'Мем',date:'2026-10-07',base:67,img:'https://image.spletnik.ru/image/2026/09/10/9PRI/original.webp',title:'Я: быстро посмотрю одну новость. Я через 3 часа: эксперт по международным отношениям',text:'Знакомо каждому, кто писал этот проект.'},
+ {id:'m3',type:'meme',tag:'Мем',date:'2026-10-07',base:57,img:'https://i.pinimg.com/736x/ce/d0/19/ced019c2965d451c04c90c9c6a3bcac5.jpg',title:'Дипломатия — это искусство говорить «хороший пёсик», пока ищешь камень',text:'Старая шутка, которая объясняет половину переговоров.'}];
+
+const QUIZ=[
+ {q:'Кто по Конституции определяет основные направления внешней политики?',a:['Государственная дума','Президент','Совет Федерации','Правительство'],c:1,w:'Это прописано в статье 86 Конституции.'},
+ {q:'В каком году утверждена Концепция внешней политики России, на которую опирается проект?',a:['2008','2013','2016','2023'],c:3,w:'Её утвердили указом Президента 31 марта 2023 года.'},
+ {q:'Сколько постоянных членов в Совете Безопасности ООН?',a:['3','5','7','15'],c:1,w:'Россия, США, Китай, Великобритания и Франция. Все пятеро имеют право вето.'},
+ {q:'Кто ввёл термин «мягкая сила»?',a:['Генри Киссинджер','Джозеф Най','Сергей Лавров','Збигнев Бжезинский'],c:1,w:'Джозеф Най, 1990 год. Это про влияние через культуру и привлекательность.'},
+ {q:'Сколько стран граничит с Россией по суше?',a:['8','11','14','20'],c:2,w:'Четырнадцать, и это рекорд среди всех стран.'},
+ {q:'С какого года работает Евразийский экономический союз?',a:['1991','2000','2015','2022'],c:2,w:'Договор вступил в силу 1 января 2015 года.'},
+ {q:'Какой орган 1549 года считают прообразом современного МИД?',a:['Посольский приказ','Боярская дума','Земский собор','Сенат'],c:0,w:'Посольский приказ занимался отношениями с другими государствами.'},
+ {q:'Какой договор завершил Северную войну?',a:['Нерчинский','Ништадтский','Брестский','Портсмутский'],c:1,w:'Ништадтский мир 1721 года: Россия закрепила выход к Балтийскому морю.'},
+ {q:'С какой империей князь Олег заключил договор в 911 году?',a:['Византийской','Монгольской','Османской','Священной Римской'],c:0,w:'Договор регулировал торговлю и защищал права купцов.'},
+ {q:'Какое событие 1480 года традиционно считают концом зависимости от Золотой Орды?',a:['Куликовская битва','Стояние на реке Угре','Ледовое побоище','Взятие Казани'],c:1,w:'Войска Ивана III и хана Ахмата разошлись без крупного сражения.'},
+ {q:'Многополярный мир — это когда…',a:['Есть один главный центр силы','Влияют сразу несколько центров силы','Все решает только ООН','Государств больше нет'],c:1,w:'Идея в том, что мировые решения не должны зависеть от одной страны или блока.'}];
+
+/* ============ ХРАНИЛИЩЕ ============ */
+const get=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}};
+const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}};
+let user=get('vp_user',null),mine=get('vp_posts',[]),likes=get('vp_likes',[]),saved=get('vp_saved',[]);
+const all=()=>[...mine,...SEED];
+const byId=id=>all().find(x=>x.id===id);
+const pop=x=>(x.base||0)+(likes.includes(x.id)?1:0);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=x=>new Date(x.date).toLocaleDateString('ru-RU',{day:'numeric',month:'long',year:'numeric'})+(x.time?', '+x.time:'');
+const link=h=>location.href.split('#')[0]+'#/'+h;
+
+/* ============ ИКОНКИ И КУСКИ РАЗМЕТКИ ============ */
+const I={save:'<svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4V4Z"/></svg>',share:'<svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2"/><circle cx="6" cy="12" r="2"/><circle cx="18" cy="19" r="2"/><path d="m8 11 8-5M8 13l8 5"/></svg>'};
+const fireImg=(h=120)=>`<img src="${FIRE_GIF}" alt="" style="height:${h}px" onerror="this.outerHTML='<div class=em>🔥</div>'">`;
+const ph=x=>`<div class="ph">${x.img?`<img src="${esc(x.img)}" alt="" loading="lazy" onerror="this.parentNode.textContent='${esc(x.tag)}'">`:esc(x.tag)}</div>`;
+const acts=x=>`<div class="acts"><button class="${likes.includes(x.id)?'on':''}" data-act="like" data-id="${x.id}" title="В огонь">🔥 ${pop(x)}</button><button class="${saved.includes(x.id)?'on':''}" data-act="save" data-id="${x.id}" title="Сохранить">${I.save}</button><button data-act="share" data-id="${x.id}" title="Поделиться">${I.share}</button></div>`;
+const card=x=>`<article class="card">${ph(x)}<div class="b"><span class="tag">${esc(x.tag)}</span><h3><a href="#/item/${x.id}">${esc(x.title)}</a></h3>${x.year?`<b style="color:var(--or);font-size:20px">${esc(x.year)}</b>`:''}<div class="meta">${fmt(x)}</div>${acts(x)}</div></article>`;
+const news=()=>all().filter(x=>x.type==='news').sort((a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||'')));
+
+/* ============ СТРАНИЦЫ ============ */
+const NAV=[['home','Главная🔥'],['quiz','Тест'],['facts','Факты и мемы'],['feed','Лента'],['about','О нас']];
+function home(){
+ const top=[...all()].sort((a,b)=>pop(b)-pop(a)).slice(0,4);
+ return `<section class="hero"><div><span class="eyebrow">_Актуальность - 2026г</span><h1 style="margin-top:10px">Внешняя политика России <em>как фактор государственности</em></h1>
+ <p>Разбираем, как решения страны за границей влияют на то, что происходит внутри</p>
+ <div class="row"><a class="btn" href="#/quiz">Пройти тест</a><a class="btn out" href="#/feed">Читать ленту</a></div>
+ <div class="stats"><div><b>${QUIZ.length}</b><span>вопросов в тесте</span></div><div><b>${all().filter(x=>x.type!=='news').length}</b><span>фактов и мемов</span></div><div><b>${news().length}</b><span>материалов в ленте</span></div></div></div>
+ <div class="fire-plate">${fireImg()}<b>Самые горящие темы</b><small>жми 🔥 на карточках — так материал попадёт в тренды</small></div></section>
+ <section class="s"><h2>🔥В тренде</h2><div class="grid">${top.map(card).join('')}</div></section>
+ <section class="s"><h2>Новости</h2><div class="grid">${news().slice(0,6).map(card).join('')}</div><div style="margin-top:18px"><a class="btn out" href="#/feed">Вся лента →</a></div></section>
+ <div class="cta"><div><span class="eyebrow">${QUIZ.length} вопросов · пара минут</span><h2 style="margin:6px 0 0">Проверь свои знания по внешней политике</h2></div><a class="btn" href="#/quiz">Пройти тест</a></div>`;
+}
+
+const Q={stage:'start',i:0,sel:null,done:false,ans:[]};
+function quiz(arg){
+ const sh=arg.s!==undefined?`<div class="banner">Твой друг набрал ${+arg.s} из ${QUIZ.length}. Сможешь лучше?</div>`:'';
+ if(Q.stage==='start')return `<div class="quiz">${sh}<div class="box"><span class="eyebrow">Интерактивный тест</span><h1 style="margin:10px 0">Шаришь за внешнюю политику?</h1><p class="lead">${QUIZ.length} вопросов по теме проекта, после каждого ответа есть пояснение, бесконечность попыток прохождения.</p><div class="row" style="margin-top:24px"><button class="btn" data-act="qstart">Начать тест</button></div></div></div>`;
+ if(Q.stage==='res'){
+  const s=Q.ans.filter((a,i)=>a===QUIZ[i].c).length,p=Math.round(s/QUIZ.length*100);
+  const t=p>=80?'Министр иностранных дел':p>=50?'Дипломат':'Стажёр в МИД';
+  const m=p>=80?'Отличный результат, МИД уже ищет тебе кабинет.':p>=50?'Уверенно держишь курс. Загляни в ленту — там разборы по темам.':'Начало положено. Почитай ленту и возвращайся за реваншем.';
+  return `<div class="quiz"><div class="box"><span class="eyebrow">Тест завершён</span><div class="score" style="margin:14px 0">${p}%</div><div class="meta">${s} из ${QUIZ.length} правильно</div><h1 style="margin:14px 0 8px;font-size:30px">${t}</h1><p class="lead">${m}</p>
+  <div class="row" style="margin:22px 0"><button class="btn" data-act="qstart">Пройти ещё раз</button><button class="btn out" data-act="qshare">Поделиться ${I.share.replace('<svg','<svg width=16 height=16 style="fill:none;stroke:currentColor;stroke-width:1.8"')}</button></div>
+  <h3>Разбор ответов</h3><div class="rev">${QUIZ.map((x,i)=>`<div>${x.a[Q.ans[i]]===x.a[x.c]?'✅':'❌'} ${esc(x.q)}<small>Правильно: ${esc(x.a[x.c])}</small></div>`).join('')}</div></div></div>`;
+ }
+ const x=QUIZ[Q.i],n=Q.i+1;
+ return `<div class="quiz"><div class="box"><div class="meta">Вопрос ${n} из ${QUIZ.length}</div><div class="bar2"><i style="width:${n/QUIZ.length*100}%"></i></div><h2>${esc(x.q)}</h2>
+ ${x.a.map((a,i)=>`<button class="ans ${Q.done?(i===x.c?'ok':i===Q.sel?'bad':''):(Q.sel===i?'sel':'')}" data-act="qpick" data-i="${i}" ${Q.done?'disabled':''}><b style="color:var(--or)">${'ABCD'[i]}</b> &nbsp;${esc(a)}</button>`).join('')}
+ ${Q.done?`<p class="why">💡 ${esc(x.w)}</p>`:''}
+ <div style="margin-top:16px">${Q.done?`<button class="btn" data-act="qnext">${n===QUIZ.length?'Показать результат':'Дальше →'}</button>`:`<button class="btn" data-act="qcheck" ${Q.sel===null?'disabled':''}>Ответить</button>`}</div></div></div>`;
+}
+
+let fFilter='Все';
+function facts(){
+ const list=all().filter(x=>x.type!=='news'),tags=['Все',...new Set(list.map(x=>x.tag))];
+ const v=list.filter(x=>fFilter==='Все'||x.tag===fFilter);
+ return `<span class="eyebrow">Учись, листая</span><h1 style="margin-top:8px">Факты <em>&</em> мемы</h1><p class="lead">История и дипломатия, которые не хочется пролистывать.</p>
+ <div class="chips">${tags.map(t=>`<button class="${t===fFilter?'on':''}" data-act="ffilter" data-v="${esc(t)}">${esc(t)}</button>`).join('')}</div><div class="grid">${v.map(card).join('')}</div>`;
+}
+
+let cat='Все',sort='new';
+function feed(){
+ const list=news(),cats=['Все',...new Set(list.map(x=>x.tag))];
+ let v=list.filter(x=>cat==='Все'||x.tag===cat);
+ if(sort==='pop')v=[...v].sort((a,b)=>pop(b)-pop(a));
+ const form=user?`<div class="panel"><h3>Новая публикация · ${esc(user.n)}</h3><form id="pf" style="margin-top:14px"><label>Заголовок<input name="t" required maxlength="120"></label><label>Рубрика<select name="g">${['Документы','Конституция','История','Экономика','Мнение','Разбор'].map(g=>`<option>${g}</option>`).join('')}</select></label><label>Текст<textarea name="x" rows="5" required></textarea></label><label>Ссылка на картинку (необязательно)<input name="i" type="url" placeholder="https://..."></label><button class="btn">Опубликовать</button></form></div>`
+ :`<div class="panel"><b>Хочешь добавить пост?</b><p class="meta" style="margin:6px 0 12px">Публиковать могут только участники проекта.</p><a class="btn sm" href="#/login">Войти</a></div>`;
+ return `<span class="eyebrow">Горячие публикации</span><h1 style="margin:8px 0 16px">Лента</h1>${user?form:''}
+ <div class="feed"><div><div class="row" style="justify-content:space-between"><div class="chips" style="margin:0">${cats.map(c=>`<button class="${c===cat?'on':''}" data-act="cat" data-v="${esc(c)}">${esc(c)}</button>`).join('')}</div><div class="chips" style="margin:0"><button class="${sort==='new'?'on':''}" data-act="sort" data-v="new">Новое</button><button class="${sort==='pop'?'on':''}" data-act="sort" data-v="pop">Популярное</button></div></div>
+ ${v.length?v.map(x=>`<div class="item"><div><time>${fmt(x).split(',')[0]}</time><div class="meta">${x.time||''}</div></div><div><span class="tag">${esc(x.tag)}${x.by?' · '+esc(x.by):''}</span><h3><a href="#/item/${x.id}">${esc(x.title)}</a></h3><p>${esc(x.text.split('\n')[0].slice(0,160))}…</p>${acts(x)}${user&&x.by===user.n?`<button class="meta" data-act="del" data-id="${x.id}">Удалить пост</button>`:''}</div></div>`).join(''):'<p class="empty">Тут пока пусто.</p>'}</div>
+ <aside>${user?'':form}<div class="panel"><h3>Популярное</h3>${[...list].sort((a,b)=>pop(b)-pop(a)).slice(0,4).map((x,i)=>`<p style="margin-top:12px"><b style="color:var(--or)">0${i+1}</b> <a href="#/item/${x.id}">${esc(x.title)}</a></p>`).join('')}</div>
+ <div class="panel"><h3>Проверь себя</h3><p class="meta" style="margin:6px 0 12px">${QUIZ.length} вопросов про внешнюю политику</p><a class="btn sm" href="#/quiz">Пройти тест</a></div></aside></div>`;
+}
+
+function item(id){
+ const x=byId(id);if(!x)return `<p class="empty">Материал не найден. <a href="#/feed" style="color:var(--or)">В ленту</a></p>`;
+ return `<article class="art"><a class="meta" href="#/feed">← В ленту</a><div style="margin:14px 0"><span class="tag">${esc(x.tag)}${x.by?' · '+esc(x.by):''}</span><h1 style="margin:8px 0">${esc(x.title)}</h1><div class="meta">${fmt(x)}</div></div>${ph(x)}${x.year?`<p><b style="color:var(--or);font-size:28px">${esc(x.year)}</b></p>`:''}${x.text.split('\n').map(p=>`<p>${esc(p)}</p>`).join('')}${x.src?`<p class="meta">Источники: ${x.src.map(r=>`<a href="${esc(r[1])}" target="_blank" rel="noopener" style="color:var(--or)">${esc(r[0])}</a>`).join(' · ')}</p>`:''}${acts(x)}</article>`;
+}
+
+function results(q){
+ const k=q.toLowerCase(),v=all().filter(x=>(x.title+' '+x.text+' '+x.tag).toLowerCase().includes(k));
+ return `<h1>Поиск: «${esc(q)}»</h1><p class="lead">Найдено: ${v.length}</p><div class="grid" style="margin-top:20px">${v.map(card).join('')}</div>${v.length?'':'<p class="empty">Ничего не нашлось. Попробуй другое слово, например «ООН» или «БРИКС».</p>'}`;
+}
+
+function savedPage(){
+ const v=all().filter(x=>saved.includes(x.id));
+ return `<h1>Сохранённое</h1><p class="lead">Всё, что ты отметил закладкой. Хранится в этом браузере.</p><div class="grid" style="margin-top:20px">${v.map(card).join('')}</div>${v.length?'':'<p class="empty">Пока ничего нет. Жми закладку на любой карточке.</p>'}`;
+}
+
+function login(){
+ if(user)return `<div class="quiz"><div class="box"><h2>Ты вошёл как ${esc(user.n)}</h2><div class="row"><a class="btn" href="#/feed">В ленту</a><button class="btn out" data-act="logout">Выйти</button></div></div></div>`;
+ return `<div class="quiz"><div class="box"><span class="eyebrow">Только для участников проекта</span><h2 style="margin-top:8px">Вход</h2><form id="lf"><label>Email<input name="e" type="email" required autocomplete="username"></label><label>Пароль<input name="p" type="password" required autocomplete="current-password"></label><p id="lerr" class="meta" style="color:#f85149;margin-bottom:10px"></p><button class="btn">Войти</button></form></div></div>`;
+}
+
+function about(){
+return `<span class="eyebrow">>_O</span><h1 style="margin:8px 0">Много о мире, <em>немножко о себе.</em></h1>
+ <p class="lead">Проект делался под дедлайном, но с душой, каждый из участников подчерпнул для себя что-то новое.</p>
+ <section class="s"><h2>Почему сайт? для того чтобы ...</h2><div class="grid"><div class="panel"><h3>Объяснить понятно</h3><p class="meta" style="margin-top:8px">Конституцию, концепцию и международные термины переводим на человеческий язык.</p></div><div class="panel"><h3>Проверить себя</h3><p class="meta" style="margin-top:8px">В тесте ${QUIZ.length} вопросов с пояснениями, чтобы запомнить, а не просто угадать.</p></div><div class="panel"><h3>Не заскучать</h3><p class="meta" style="margin-top:8px">Факты и мемы помогают запомнить, при условии, что за шуткой стоит правда.</p></div></div></section>
+ <section class="s"><h2>Команда</h2><div class="team">${USERS.map(u=>`<div class="card"><div class="av">${PHOTOS[u.n]?`<img src="${esc(PHOTOS[u.n])}" alt="">`:u.n[0]}</div><h3>${u.n}</h3><span class="meta"></span></div>`).join('')}</div></section>`;
+}
+
+/* ============ РОУТЕР ============ */
+function render(){
+ const [path,qs]=(location.hash.slice(2)||'home').split('?'),[page,arg]=path.split('/'),p=Object.fromEntries(new URLSearchParams(qs||''));
+ const views={home,quiz:()=>quiz(p),facts,feed,about,login,saved:savedPage,item:()=>item(arg),search:()=>results(p.q||'')};
+ $('#app').innerHTML=(views[page]||home)();
+ $('#nav').innerHTML=NAV.map(([id,l])=>`<a href="#/${id}" class="${id===page?'on':''}">${l}</a>`).join('');
+ $('#tools').innerHTML=`<a href="#/saved" class="meta" title="Сохранённое">🔖 ${saved.length}</a>`+(user?`<a href="#/login" class="tag">${esc(user.n)}</a>`:`<a class="btn sm out" href="#/login">Войти</a>`);
+ $('#nav').classList.remove('open');
+}
+const $=s=>document.querySelector(s);
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('show'),2200)};
+async function share(title,url){
+ if(navigator.share){try{await navigator.share({title,url});return}catch(e){if(e.name==='AbortError')return}}
+ try{await navigator.clipboard.writeText(url)}catch{const a=document.createElement('textarea');a.value=url;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove()}
+ toast('Ссылка скопирована');
+}
+
+/* ============ СОБЫТИЯ ============ */
+document.addEventListener('click',e=>{
+ const b=e.target.closest('[data-act]');if(!b)return;
+ const a=b.dataset.act,id=b.dataset.id,x=id&&byId(id);
+ if(a==='burger')$('#nav').classList.toggle('open');
+ else if(a==='like'){likes=likes.includes(id)?likes.filter(i=>i!==id):[...likes,id];put('vp_likes',likes);render()}
+ else if(a==='save'){saved=saved.includes(id)?saved.filter(i=>i!==id):[...saved,id];put('vp_saved',saved);toast(saved.includes(id)?'Сохранено':'Убрано из сохранённого');render()}
+ else if(a==='share')share(x.title,link('item/'+id));
+ else if(a==='ffilter'){fFilter=b.dataset.v;render()}
+ else if(a==='cat'){cat=b.dataset.v;render()}
+ else if(a==='sort'){sort=b.dataset.v;render()}
+ else if(a==='del'&&confirm('Удалить этот пост?')){mine=mine.filter(i=>i.id!==id);put('vp_posts',mine);render()}
+ else if(a==='logout'){user=null;put('vp_user',null);location.hash='/home';render()}
+ else if(a==='qstart'){Object.assign(Q,{stage:'q',i:0,sel:null,done:false,ans:[]});history.replaceState(null,'','#/quiz');render()}
+ else if(a==='qpick'){Q.sel=+b.dataset.i;render()}
+ else if(a==='qcheck'){Q.done=true;Q.ans[Q.i]=Q.sel;render()}
+ else if(a==='qnext'){if(Q.i===QUIZ.length-1)Q.stage='res';else{Q.i++;Q.sel=null;Q.done=false}render();scrollTo(0,0)}
+ else if(a==='qshare'){const s=Q.ans.filter((v,i)=>v===QUIZ[i].c).length;share(`Я набрал ${s} из ${QUIZ.length} в тесте по внешней политике`,link('quiz?s='+s))}
+});
+document.addEventListener('submit',e=>{
+ e.preventDefault();const f=e.target;
+ if(f.id==='sf'){const v=$('#q').value.trim();if(v)location.hash='/search?q='+encodeURIComponent(v)}
+ else if(f.id==='lf'){const d=new FormData(f),u=USERS.find(u=>u.e===d.get('e').trim().toLowerCase()&&u.p===d.get('p'));
+  if(!u){$('#lerr').textContent='Неверная почта или пароль';return}
+  user={n:u.n,e:u.e};put('vp_user',user);location.hash='/feed'}
+ else if(f.id==='pf'&&user){const d=new FormData(f),n=new Date();
+  mine=[{id:'u'+Date.now(),type:'news',tag:d.get('g'),title:d.get('t').trim(),text:d.get('x').trim(),img:d.get('i').trim(),by:user.n,base:0,date:n.toISOString().slice(0,10),time:n.toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'})},...mine];
+  put('vp_posts',mine);toast('Пост опубликован');render()}
+});
+addEventListener('hashchange',()=>{render();scrollTo(0,0)});
+render();
+</script>
+</body>
+</html>
